@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/holo_blue_dark"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/etUsernameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Password" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/login_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:textAlignment="center"
+        android:background="@drawable/login_or_signup_button_design"
+        android:textSize="22sp"
+        android:fontFamily="@font/helvatica"
+        android:hint="LOGIN" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/returnToSignBtn"
+        android:layout_width="240sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/goto_signup_login_button_design"
+        android:text="Return To Sign Up"
+        android:textSize="20sp"
+        android:fontFamily="@font/helvatica"
+
+        />
+
+
+</LinearLayout>

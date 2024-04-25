@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3C4142"
+    android:layout_height="match_parent"
+    tools:context=".UserNewScreen">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompact"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="264dp"
+            android:layout_height="284dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:text="My Open Weather"
+            android:fontFamily="@font/helvatica"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="37dp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:layout_width="1000dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="350dp"
+        android:gravity="center"
+        android:text="Created By Luppole"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="530dp"
+        android:fontFamily="@font/helvatica"
+        android:gravity="center"
+        android:lineSpacingExtra="0dp"
+        android:text="Powered By OpenWeatherAPI "
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backToSignUp"
+        android:layout_marginTop="630dp"
+        android:layout_width="300dp"
+        android:background="@drawable/general_button_design"
+        android:textColor="#E5ECF7"
+        android:fontFamily="@font/helvatica"
+        android:gravity="center"
+        android:layout_marginLeft="52dp"
+        android:textSize="20dp"
+        android:layout_height="55dp"
+        android:text="Back To Sign UP"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:lineHeight="25sp"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="400sp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/helvatica"
+        android:text="My Open Weather is a utillity application designed to make the life of the average user way easier, by creating an All-In-One app for customizing and logging outfits, based of the current weather everywhere in the world " />
+
+</RelativeLayout>

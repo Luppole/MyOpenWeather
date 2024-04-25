@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/recommendation_text"
+        android:layout_width="411dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="284dp"
+        android:fontFamily="@font/helvatica"
+        android:gravity="center"
+        android:text="Waiting..."
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/request_ai_rec_button"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/general_button_design"
+        android:text="GET AI RECOMMENDATION"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recommendation_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goto_outfitcalender_button"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/general_button_design"
+        android:text="SET YOUR OUTFIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/request_ai_rec_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backToMain"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        tools:layout_editor_absoluteX="14dp"
+        android:background="@drawable/back_arrow"
+        tools:layout_editor_absoluteY="9dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

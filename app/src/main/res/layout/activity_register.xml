@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/holo_blue_dark"
+    android:gravity="center">
+
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvatica"
+        android:layout_marginTop="16dp"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvatica"
+        android:layout_marginTop="16dp"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/etRePassword"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvatica"
+        android:layout_marginTop="16dp"
+        android:hint="Retype Password" />
+    
+    <ProgressBar
+        android:id="@+id/register_progress_bar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/login_or_signup_button_design"
+        android:fontFamily="@font/helvatica"
+        android:textSize="20sp"
+        android:text="Register"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="200sp"
+        android:background="@drawable/goto_signup_login_button_design"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="100sp"
+        android:fontFamily="@font/helvatica"
+        android:textSize="17sp"
+        android:text="Go To Login"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goToNewScreen"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/helvatica"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/general_button_design"
+        android:text="Read About IT" />
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backToMainBtn"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_margin="5sp"
+        tools:layout_editor_absoluteX="14dp"
+        android:background="@drawable/back_arrow"
+        tools:layout_editor_absoluteY="9dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:fontFamily="@font/helvatica"
+        android:id="@+id/goto_statistics_button"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/general_button_design"
+        android:text="GO TO STATISTICS"
+        android:layout_gravity="center" />
+
+    <CalendarView
+        android:id="@+id/calenderView"
+        android:layout_width="match_parent"
+        android:layout_height="300sp" />
+
+    <TextView
+        android:id="@+id/showDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Date:"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:fontFamily="@font/helvatica"
+        />
+
+    <TextView
+        android:id="@+id/outfitText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Outfit"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/helvatica"
+        android:textColor="@android:color/black"
+        />
+
+    <EditText
+        android:id="@+id/getOutfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/helvatica"
+        android:hint="Enter Your Outfit Here"
+        android:layout_marginBottom="10sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/general_button_design"
+        android:fontFamily="@font/helvatica"
+        android:layout_gravity="center"
+        android:text="Confirm"
+        android:textColor="@android:color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/open_camera_button"
+        android:layout_width="175sp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/automate_button_design"
+        android:fontFamily="@font/helvatica"
+        android:text="Automate Using AI"
+        android:textColor="@android:color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/remove_data_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outfitlogger_remove_button_design"
+        android:fontFamily="@font/helvatica"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:text="Remove"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
